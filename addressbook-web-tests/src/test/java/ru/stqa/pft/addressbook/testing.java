@@ -26,10 +26,6 @@ public class testing{
     // Maximize the browser's window
     wd.manage().window().maximize();
     wd.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-  }
-
-  @Test
-  public void testDragAndDrop() throws Exception {
     wd.get(baseUrl);
     Thread.sleep(1000);
 
@@ -40,6 +36,12 @@ public class testing{
     wd.findElement(By.name("pass")).clear();
     wd.findElement(By.name("pass")).sendKeys("secret");
     wd.findElement(By.xpath("//form[@id='LoginForm']/input[3]")).click();
+  }
+
+  @Test
+  public void testGroupCreation() throws Exception {
+
+
     wd.findElement(By.linkText("groups")).click();
     wd.findElement(By.name("new")).click();
     wd.findElement(By.name("group_name")).click();
