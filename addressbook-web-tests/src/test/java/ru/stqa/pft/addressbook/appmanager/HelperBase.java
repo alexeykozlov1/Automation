@@ -1,15 +1,15 @@
 package ru.stqa.pft.addressbook.appmanager;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.remote.RemoteWebDriver;
 
 /**
  * Created by alexeykozlov on 10/16/17.
  */
 public class HelperBase {
-  protected ChromeDriver wd;
+  protected RemoteWebDriver wd;
 
-  public HelperBase(ChromeDriver wd) {
+  public HelperBase(RemoteWebDriver wd) {
     this.wd = wd;
   }
 
