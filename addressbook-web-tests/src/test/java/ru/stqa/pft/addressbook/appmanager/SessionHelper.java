@@ -1,7 +1,7 @@
 package ru.stqa.pft.addressbook.appmanager;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.remote.RemoteWebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 
 /**
  * Created by alexeykozlov on 10/13/17.
@@ -9,7 +9,7 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 public class SessionHelper extends HelperBase {
 
 
-  public SessionHelper(RemoteWebDriver wd) {
+  public SessionHelper(ChromeDriver wd) {
     super(wd);
   }
 
